@@ -11,6 +11,8 @@
       href="git://anongit.freedesktop.org/poppler/"/>
   <repository type="git" name="git.freedesktop.org"
     href="git://anongit.freedesktop.org/"/>
+  <repository type="git" name="github.com"
+    href="git://github.com/m4heshd/"/>
 
 <!-- Base packages since evince 3.8 -->
   <autotools id="atk">
@@ -137,7 +139,7 @@
 <!-- packages -->
   <autotools id="evince" autogenargs="--enable-introspection"
                          supports-parallel-builds="no">
-    <branch/>
+    <branch repo="github.com"/>
     <dependencies>
       <dep package="gtk+"/>
       <dep package="poppler"/>
